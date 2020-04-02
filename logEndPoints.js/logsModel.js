@@ -12,10 +12,10 @@ function add(logger) {
     "timeOfLog",
     "timeOfIncident",
     "incidentNumber",
-    "completed",
-    "errorMeessage",
-    "comments",
-    "discovered",
+    "status",
+    "errorMessage",
+    "nameOfLog",
+    "discoveries",
     "outcome"
   )
 }
@@ -23,13 +23,13 @@ function add(logger) {
 function find() {
   return db("logs").select(
     "id",
-    "time-of-log",
-    "time-of-incident",
-    "incident-number",
-    "completed",
-    "error-message",
-    "comments",
-    "discovered",
+    "timeOfLog",
+    "timeOfIncident",
+    "incidentNumber",
+    "status",
+    "errorMessage",
+    "nameOfLog",
+    "discoveries",
     "outcome"
   )
 }
