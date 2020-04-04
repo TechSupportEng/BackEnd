@@ -2,6 +2,7 @@ exports.up = function(knex) {
   return knex.schema.createTable("logs", tbl => {
     tbl.increments()
 
+    
     tbl.string("timeOfLog", 128).notNullable()
     tbl.string("timeOfIncident", 128).notNullable()
     tbl.string("incidentNumber", 128).notNullable()
